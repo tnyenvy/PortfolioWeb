@@ -70,7 +70,7 @@ const Home = ({ onNavigate }) => {
         </div>
         <div className="hero__image">
           <div className="image-placeholder">
-            <img src="/src/assets/img1.jpg" alt="Yến Vy" />
+            <img src="/assets/img1.jpg" alt="Yến Vy" />
           </div>
         </div>
       </section>

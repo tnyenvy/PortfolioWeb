@@ -63,7 +63,7 @@ const AboutMe = ({ onNavigate }) => {
         <div className="profile-section">
           <div className="profile-image">
             <div className="image-placeholder">
-              <img src="/src/assets/img1.jpg" alt="Yến Vy" />
+              <img src="/assets/img1.jpg" alt="Yến Vy" />
             </div>
           </div>
         </div>
