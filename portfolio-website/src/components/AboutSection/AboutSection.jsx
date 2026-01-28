@@ -54,7 +54,7 @@ const AboutSection = ({ onNavigate }) => {
         {/* Cột bên phải: Ảnh */}
         <div className="image-column">
           <div className="image-placeholder">
-            <img src="/src/assets/img2.jpg" alt="Yến Vy" />
+            <img src="/assets/img2.jpg" alt="Yến Vy" />
           </div>
         </div>
       </div>
