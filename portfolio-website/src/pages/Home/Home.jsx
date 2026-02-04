@@ -15,7 +15,7 @@ const Home = ({ onNavigate }) => {
       description: 'Teamed up with a freelance team to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.',
       year: '2023',
       role: 'Front-end Developer',
-      image: <img src="/assets/cat.jpg" alt="Adventure Time Project" />, 
+      image: '/assets/cat.jpg',
       links: {
         demo: '#',
         github: '#'
@@ -28,7 +28,7 @@ const Home = ({ onNavigate }) => {
       year: '2022',
       role: 'Front-end Developer',
       client: 'World News',
-      image: <img src="/assets/dust.jpg" alt="World News Project"/>,
+      image: '/assets/dust.jpg',
       links: {
         view: '#'
       }

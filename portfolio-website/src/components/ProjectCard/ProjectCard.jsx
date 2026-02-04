@@ -8,7 +8,15 @@ const ProjectCard = ({ project }) => {
     <div className="project-card">
       <div className="project-card__image">
         <div className="image-placeholder">
-          <span>{image || '📱'}</span>
+          {image ? (
+            typeof image === 'string' ? (
+              <img src={image} alt={title} />
+            ) : (
+              image
+            )
+          ) : (
+            <span>📱</span>
+          )}
         </div>
       </div>
       
