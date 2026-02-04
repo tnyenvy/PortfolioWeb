@@ -1,0 +1,70 @@
+@import '../../css/variables.scss';
+
+/* Đặt con trỏ chuột mặc định cho toàn bộ trang */
+* {
+  cursor: default !important;
+}
+
+/* Các element có thể click vẫn giữ cursor pointer */
+a, button, [role="button"], input[type="submit"], input[type="button"] {
+  cursor: pointer !important;
+}
+
+/* Input text giữ cursor text khi focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  cursor: text !important;
+}
+
+/* Hiệu ứng glow chính - màu xanh neon nhạt */
+.mouse-glow {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(100, 255, 218, 0.7) 0%,
+    rgba(100, 255, 218, 0.4) 30%,
+    rgba(100, 255, 218, 0.2) 50%,
+    rgba(100, 255, 218, 0) 80%
+  );
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  filter: blur(8px);
+  mix-blend-mode: screen;
+}
+
+/* Trail effect - một mảng màu nhạt di chuyển theo */
+.mouse-trail {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(100, 255, 218, 0.25) 0%,
+    rgba(100, 255, 218, 0.15) 25%,
+    rgba(100, 255, 218, 0.08) 50%,
+    rgba(100, 255, 218, 0.04) 70%,
+    rgba(100, 255, 218, 0) 100%
+  );
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+  filter: blur(40px);
+  mix-blend-mode: screen;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive - Tắt hiệu ứng trên mobile */
+@media (max-width: $breakpoint-tablet) {
+  .mouse-glow,
+  .mouse-trail {
+    display: none;
+  }
+}

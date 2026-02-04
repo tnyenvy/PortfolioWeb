@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import AboutMe from './pages/AboutMe/AboutMe';
+import MouseEffect from './components/MouseEffect/MouseEffect';
 
 function App() {
   const navigate = useNavigate();
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <MouseEffect />
       <Header />
       <Routes>
         {/* Home Page */}
