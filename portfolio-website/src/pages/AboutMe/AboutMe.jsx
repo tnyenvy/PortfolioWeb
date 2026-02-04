@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Button from '../../components/Button/Button.jsx';
 import SocialLink from '../../components/SocialLink/SocialLink.jsx';
 import ContactSection from '../../components/ContactSection/ContactSection.jsx';
+import BackToTop from '../../components/BackToTop/BackToTop';
 import './AboutMe.scss';
 
 const AboutMe = ({ onNavigate }) => {
@@ -115,6 +116,9 @@ const AboutMe = ({ onNavigate }) => {
 
       {/* Contact Section */}
       <ContactSection />
+
+      {/* Back to top */}
+      <BackToTop />
     </div>
   );
 };

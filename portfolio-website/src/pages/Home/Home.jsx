@@ -4,6 +4,7 @@ import SocialLink from '../../components/SocialLink/SocialLink.jsx';
 import ProjectCard from '../../components/ProjectCard/ProjectCard.jsx';
 import AboutSection from '../../components/AboutSection/AboutSection.jsx';
 import ContactSection from '../../components/ContactSection/ContactSection.jsx';
+import BackToTop from '../../components/BackToTop/BackToTop';
 import './Home.scss';
 
 const Home = ({ onNavigate }) => {
@@ -102,6 +103,9 @@ const Home = ({ onNavigate }) => {
 
       {/* Contact Section */}
       <ContactSection />
+
+      {/* Back to top */}
+      <BackToTop />
     </div>
   );
 };
